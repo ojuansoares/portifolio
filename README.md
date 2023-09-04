@@ -6,10 +6,14 @@
 <img style="width: 40%;" src="mgt/foto.jpg">
 </p>
 
+<br>
+
 ## Tecnologias Utilizadas no Projeto
 
 - Python 3.11.5
 - Flask 2.3.3
+
+<br>
 
 ## Autor
 
@@ -17,13 +21,19 @@
 - Email: juan.garcia.soares@gmail.com
 - GitHub: [Seu perfil GitHub](https://github.com/ojuansoares)
 
+<br>
+
 ## Como Clonar e Executar o Projeto
 
 Siga as instruções abaixo para clonar e executar o projeto em sua máquina local.
 
+<br>
+
 ### Pré-requisitos
 
 Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) instalados em sua máquina.
+
+<br>
 
 ### Passos
 
