@@ -53,3 +53,5 @@ Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) inst
    git clone https://github.com/ojuansoares/portifolio_digital_dsm
 
 7. Pressione ENTER para criar seu clone local.
+
+(Validação professor FGMC - 1DSM - 2023-02)
