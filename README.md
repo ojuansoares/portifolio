@@ -31,7 +31,7 @@ Siga as instruções abaixo para clonar e executar o projeto em sua máquina loc
 
 ### Pré-requisitos
 
-Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) instalados em sua máquina.
+Certifique-se de ter o Python 3.11.5 e Flask 3.0.0 (ou versões superiores) instalados em sua máquina.
 
 <br>
 
