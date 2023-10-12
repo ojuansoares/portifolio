@@ -67,16 +67,26 @@ Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) inst
    env\Scripts\activate
 
 4. Digite o comando:
-    
+  
+   ```bash
+   pip install flask
+
+5. Digite o comando:
+  
+   ```bash
+   pip install -r requirements.txt
+
+6. Digite o comando:
+
    ```bash
    cd src
 
-5. Para inicar o Flask basta digitar o comando:
+4. Para inicar o Flask basta digitar o comando:
  
    ```bash
    flask run
 
-6. Copie e cole este link no seu navegador para visualizar:
+5. Copie e cole este link no seu navegador para visualizar:
  
    ```bash
    http://127.0.0.1:5000
