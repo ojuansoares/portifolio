@@ -61,32 +61,32 @@ Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) inst
    ```bash
    python -m venv env
 
-3. Ative o Ambiente Virtual digitando no CMD:
+2. Ative o Ambiente Virtual digitando no CMD:
     
    ```bash
    env\Scripts\activate
 
-4. Digite o comando:
+3. Digite o comando:
   
    ```bash
    pip install flask
+
+4. Digite o comando:
+
+   ```bash
+   cd src
 
 5. Digite o comando:
   
    ```bash
    pip install -r requirements.txt
 
-6. Digite o comando:
-
-   ```bash
-   cd src
-
-4. Para inicar o Flask basta digitar o comando:
+6. Para inicar o Flask basta digitar o comando:
  
    ```bash
    flask run
 
-5. Copie e cole este link no seu navegador para visualizar:
+7. Copie e cole este link no seu navegador para visualizar:
  
    ```bash
    http://127.0.0.1:5000
