@@ -7,7 +7,7 @@
     <title>{{title}}</title>
 </head>
 <body style="background-color: #303e7c; color: rgb(255, 255, 255);";>
-<header class="navbar">
+    <header class="navbar">
         <a href="/"><img class="navbar__logo" src="{{url_for('static', filename='mgt/logo.png')}}" alt="logo do site"></a>
         <nav class="navbar__links">
             <a class="navbar__links__link" href="/">Home</a>
@@ -16,10 +16,10 @@
         </nav>
     </header>
 
-<main>
-    {% block content %}
-    {% endblock %}
-</main>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
 </body>
 </html>
