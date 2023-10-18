@@ -1,9 +1,9 @@
-# PORTIFÓLIO
+# PORTFÓLIO
 
 <br>
 
 <p align="center">
-<img style="width: 50%;" src="mgt/foto.jpg">
+<img style="width: 50%;" src="src/static/mgt/foto.png">
 </p>
 
 <br>
@@ -11,7 +11,7 @@
 ## Tecnologias Utilizadas no Projeto
 
 - Python 3.11.5
-- Flask 2.3.3
+- Flask 3.0.0
 
 <br>
 
@@ -31,7 +31,7 @@ Siga as instruções abaixo para clonar e executar o projeto em sua máquina loc
 
 ### Pré-requisitos
 
-Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) instalados em sua máquina.
+Certifique-se de ter o Python 3.11.5 e Flask 3.0.0 (ou versões superiores) instalados em sua máquina.
 
 <br>
 
@@ -53,5 +53,42 @@ Certifique-se de ter o Python 3.11.5 e Flask 2.3.3 (ou versões superiores) inst
    git clone https://github.com/ojuansoares/portifolio_digital_dsm
 
 7. Pressione ENTER para criar seu clone local.
+
+### Após o CLone
+
+1. Abra o CMD dentro do diretório "portifolio_digital_dsm" e digite:
+    
+   ```bash
+   python -m venv env
+
+2. Ative o Ambiente Virtual digitando no CMD:
+    
+   ```bash
+   env\Scripts\activate
+
+3. Digite o comando:
+  
+   ```bash
+   pip install flask
+
+4. Digite o comando:
+
+   ```bash
+   cd src
+
+5. Digite o comando:
+  
+   ```bash
+   pip install -r requirements.txt
+
+6. Para inicar o Flask basta digitar o comando:
+ 
+   ```bash
+   flask run
+
+7. Copie e cole este link no seu navegador para visualizar:
+ 
+   ```bash
+   http://127.0.0.1:5000
 
 (Validação professor FGMC - 1DSM - 2023-02)
