@@ -91,4 +91,25 @@ Certifique-se de ter o Python 3.11.5 e Flask 3.0.0 (ou versões superiores) inst
    ```bash
    http://127.0.0.1:5000
 
+### Instruções para a implantação no Vercel
+
+1. Instalar o node e seu gerenciador de pacotes, ou seja, o npm
+2. Instalar o vercel através do comando:
+
+      ```bash
+   npm install -g vercel 
+
+3. Considerando que você já criou uma conta no Vercel, e que está logado, utilize o comando seguinte no mesmo nível do arquivo vercel.json
+
+      ```bash
+   vercel
+
+4. Defina um nome para a sua aplicação e utilize todas as demais opções de acordo com o padrão sugerido.
+
+5. Verifique se o link disponibilizado ao final do processo de upload/build está acessível, caso não esteja, execute o comando
+
+      ```bash
+   vercel --prod 
+   
+
 (Validação professor FGMC - 1DSM - 2023-02)
