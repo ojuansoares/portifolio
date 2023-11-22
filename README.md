@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-<img style="width: 50%;" src="api/static/mgt/foto.png">
+<img style="width: 50%;" src="api/static/images/foto.png">
 </p>
 
 <br>
