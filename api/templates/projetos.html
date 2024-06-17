@@ -3,12 +3,13 @@
 
 <div class="espaçoproj"></div>
 
-<body style="background-color: black; color: white;";>
+<body style="background-color: black; color: white;">
 
+
+<div class="min_width">
+    <h1 class="titulo">Projetos Acadêmicos</h1>
+</div>
 {% for projeto in projetos_academicos %}
-    <div class="titulo min_width">
-        <h1>{{ projeto['titulo'] }}</h1>
-    </div>
     
     <div class="proj_content min_width">
         <div>
@@ -23,10 +24,11 @@
     </div>
 {% endfor %}
 
+<div class="min_width">
+    <h1 class="titulo">Projetos Pessoais</h1>
+</div>
+
 {% for projeto in projetos_pessoais %}
-    <div class="titulo min_width">
-        <h1>{{ projeto['titulo'] }}</h1>
-    </div>
     
     <div class="proj_content min_width">
         <div>
