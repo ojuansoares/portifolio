@@ -277,6 +277,18 @@ a{
         transition: transform 0.4s; 
     }
 
+    .titulo_navbar{
+        font-family: "Monaco", monospace;
+        transition: transform 0.3s;
+        font-size: 2vh;
+    }
+
+    .titulo_navbar:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.596);
+    }
+
     .page_content1{
         display: flex;
         flex-direction: column-reverse;
@@ -300,21 +312,21 @@ a{
     }
 
     .texto1{
-        font-size: 4vh;
+        font-size: 2vh;
         margin-top: 0px;
         font-family: "Monaco", monospace;
     }
 
     .texto2{
         color: white;
-        font-size: 2.5vh;
+        font-size: 1.2vh;
         margin-top: -10px;
         font-weight: 100;
         font-family: "Monaco", monospace;
     }
 
     .texto_thin{
-        font-size: 2.5vh;
+        font-size: 1.2vh;
         font-family: "Monaco", monospace;
         text-align: start;
         font-weight: 100;
@@ -367,7 +379,7 @@ a{
 
     .titulo{
         padding-top: 40px;
-        font-size: 4vh;
+        font-size: 2vh;
         margin-bottom: 2vh;
         text-align: center;
         justify-content: center;
