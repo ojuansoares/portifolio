@@ -1,34 +1,33 @@
 /* \/ IMAGENS \/ */
 
 .img_proj{
-    width: 80%;
+    width: 55vh;
     border-radius: 15px;
 }
 
 .minha_foto{
-    width: 250px;
-    height: 250px;
-    transition: transform 0.8s; 
-    transform: rotate(0deg);
+    width: 45vh;
+    border-radius: 50%;
+    transition: transform 0.5s;
     filter: brightness(115%);
     filter: contrast(110%);
     filter: saturate(115%);
 }
 
 .navbar__logo{
-    width: 70px;
-    height: 60px;
+    width: 11.5vh;
+    margin: 0.6vh;
     transition: transform 0.4s; 
 }
 
 /* \/ ESPAÇO PARA NAVBAR \/ */
 
 .espaçohome{
-    padding-top: 160px;
+    padding-top: 22vh;
 }
 
 .espaçoproj{
-    padding-top: 80px;
+    padding-top: 15vh;
 }
 
 /* \/ LOGO \/ */
@@ -64,17 +63,18 @@
 
 .proj_content{
     display: flex;
-    margin-top: 100px;
+    margin-top: 4vh;
     margin-left: 15%;
     margin-right: 15%;
     justify-content: space-around;
     width: 70%;
     align-items: center;
     transition: transform 0.3s; 
+    gap: 2vh;
 
     background-color: #4f5b9c;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 4vh;
+    border-radius: 3.5vh;
     box-shadow: 0px 0px 15px #283468;
 }
 
@@ -90,8 +90,8 @@
     
 
     background-color: #4f5b9c;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 4vh;
+    border-radius: 3.5vh;
     box-shadow: 0px 0px 15px #283468;
 }
 
@@ -106,8 +106,8 @@
 
 
     background-color: #4f5b9c;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 4vh;
+    border-radius: 3.5vh;
     box-shadow: 0px 0px 15px #283468;
 }
 
@@ -125,8 +125,8 @@
 
 
     background-color: #4f5b9c;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 4vh;
+    border-radius: 3.5vh;
     box-shadow: 0px 0px 15px #283468;
 }
 
@@ -140,8 +140,8 @@
     transition: transform 0.3s; 
 
     background-color: #4f5b9c;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 4vh;
+    border-radius: 3.5vh;
     box-shadow: 0px 0px 15px #283468;
 }
 
@@ -154,8 +154,8 @@ a{
 
 .titulo{
     padding-top: 40px;
-    font-size: 20px;
-    margin-bottom: -50px;
+    font-size: 6.4vh;
+    margin-bottom: 2vh;
     text-align: center;
     font-family: "Monaco", monospace; 
 
@@ -168,14 +168,15 @@ a{
 }
 
 .texto1{
-    font-size: 30px;
+    font-size: 5.4vh;
     margin-top: 0px;
     font-family: "Monaco", monospace;
+    text-align: start;
 }
 
 .texto2{
     color: white;
-    font-size: 15px;
+    font-size: 2.8vh;
     margin-top: -10px;
     font-weight: 100;
     font-family: "Monaco", monospace;
@@ -188,14 +189,15 @@ a{
 }
 
 .texto_thin{
-    font-size: 15px;
+    font-size: 2.8vh;
     font-family: "Monaco", monospace;
     font-weight: 100;
 }
 
 .titulo_navbar{
     font-family: "Monaco", monospace;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
+    font-size: 3.6vh;
 }
 
 /* \/ HOVER ELEMENTS \/ */
@@ -237,8 +239,8 @@ a{
 }
 
 .minha_foto:hover{
-    transform: rotate(360deg);
-    transition: all 0.8s;
+    transform: scale(1.07);
+    transition: 0.3s;
 }
 
 .logo:hover{
@@ -262,9 +264,18 @@ a{
     min-width: 200px;
 }
 
-@media (width <= 768px) {
+@media (width <= 1000px) {
 
     /* \/ HOME \/ */
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .navbar__logo{
+        width: 9vh;
+        transition: transform 0.4s; 
+    }
 
     .page_content1{
         display: flex;
@@ -277,8 +288,8 @@ a{
 
 
         background-color: #4f5b9c;
-        padding: 20px;
-        border-radius: 15px;
+        padding: 4vh;
+        border-radius: 3.5vh;
         box-shadow: 0px 0px 15px #283468;
     }
 
@@ -288,9 +299,29 @@ a{
         max-width: 80%;
     }
 
+    .texto1{
+        font-size: 4vh;
+        margin-top: 0px;
+        font-family: "Monaco", monospace;
+    }
+
+    .texto2{
+        color: white;
+        font-size: 2.5vh;
+        margin-top: -10px;
+        font-weight: 100;
+        font-family: "Monaco", monospace;
+    }
+
+    .texto_thin{
+        font-size: 2.5vh;
+        font-family: "Monaco", monospace;
+        text-align: start;
+        font-weight: 100;
+    }
+
     .minha_foto{
-        width: 80%;
-        height: 80%;
+        width: 27vh;
         margin-bottom: 50px;
     }
 
@@ -300,7 +331,7 @@ a{
     }
 
     .logo{
-        width: 25%;
+        width: 5.8vh;
         margin-left: 5px;
         margin-right: 5px;
     }
@@ -310,7 +341,7 @@ a{
     .proj_content{
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 5vh;
         margin-left: 15%;
         margin-right: 15%;
         justify-content: center;
@@ -320,8 +351,8 @@ a{
 
 
         background-color: #4f5b9c;
-        padding: 25px;
-        border-radius: 15px;
+        padding: 4vh;
+        border-radius: 3.5vh;
         box-shadow: 0px 0px 15px #283468;
     }
 
@@ -336,8 +367,8 @@ a{
 
     .titulo{
         padding-top: 40px;
-        font-size: 20px;
-        margin-bottom: -50px;
+        font-size: 4vh;
+        margin-bottom: 2vh;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -355,8 +386,8 @@ a{
 
 
         background-color: #4f5b9c;
-        padding: 25px;
-        border-radius: 15px;
+        padding: 4vh;
+        border-radius: 3.5vh;
         box-shadow: 0px 0px 15px #283468;
     }
 
