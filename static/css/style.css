@@ -6,7 +6,7 @@
 }
 
 .minha_foto{
-    width: 45vh;
+    width: 35vh;
     border-radius: 50%;
     transition: transform 0.5s;
     filter: brightness(115%);
@@ -15,7 +15,7 @@
 }
 
 .navbar__logo{
-    width: 11.5vh;
+    width: 7vh;
     margin: 0.6vh;
     transition: transform 0.4s; 
 }
@@ -33,7 +33,7 @@
 /* \/ LOGO \/ */
 
 .logo{
-    width: 15%;
+    width: 10%;
     margin-left: 10px;
     margin-right: 10px;
     transition: transform 1s; 
@@ -154,7 +154,7 @@ a{
 
 .titulo{
     padding-top: 40px;
-    font-size: 6.4vh;
+    font-size: 5vh;
     margin-bottom: 2vh;
     text-align: center;
     font-family: "Monaco", monospace; 
@@ -168,7 +168,7 @@ a{
 }
 
 .texto1{
-    font-size: 5.4vh;
+    font-size: 4vh;
     margin-top: 0px;
     font-family: "Monaco", monospace;
     text-align: start;
@@ -176,7 +176,7 @@ a{
 
 .texto2{
     color: white;
-    font-size: 2.8vh;
+    font-size: 2vh;
     margin-top: -10px;
     font-weight: 100;
     font-family: "Monaco", monospace;
@@ -197,7 +197,7 @@ a{
 .titulo_navbar{
     font-family: "Monaco", monospace;
     transition: transform 0.3s;
-    font-size: 3.6vh;
+    font-size: 2.4vh;
 }
 
 /* \/ HOVER ELEMENTS \/ */
