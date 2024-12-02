@@ -15,6 +15,10 @@
 
 <br>
 
+## Acesse o Projeto [Clicando aqui!](https://portfolio-juansoares.vercel.app/)
+
+<br>
+
 ## Autor
 
 - Nome: Juan Garcia Soares
@@ -50,13 +54,13 @@ Certifique-se de ter o Python 3.11.5 e Flask 3.0.0 (ou versões superiores) inst
 6. Digite git clone e cole a URL já copiada.
 
    ```bash
-   git clone https://github.com/ojuansoares/portifolio_digital_dsm
+   git clone https://github.com/ojuansoares/portifolio
 
 7. Pressione ENTER para criar seu clone local.
 
 ### Após o CLone
 
-1. Abra o CMD dentro do diretório "portifolio_digital_dsm" e digite:
+1. Abra o CMD dentro do diretório "portifolio" e digite:
     
    ```bash
    python -m venv env
