@@ -1,22 +1,41 @@
-from flask import Flask, render_template
+from flask import Flask, render_template # type: ignore
 
 app = Flask("__name__")
 
 projetos_academicos = [
     {
+        'semestre-titulo': '2023-2',
+        'titulo': '1º API | Rim do Amor',
+        'imagem_src': 'static/images/api.png',
+        'semestre': 'Participei no projeto chamado Rim do Amor juntamente com minha equipe da faculdade. O objetivo era criar um site dedicado a mães com filhos diagnosticados com insuficiência renal crônica, fornecendo informações e suporte relacionados à doença. Durante esse semestre, utilizamos Python Flask para o backend e HTML & CSS para o frontend, aplicando boas práticas de desenvolvimento para entregar uma solução funcional e acessível.',
+        'tecnologias': 'Plataforma de Interação, Analytics',
+        'contribuicoes': 'Dentro do projeto, minha maior contribuição foi no desenvolvimento do frontend, criando interfaces acessíveis e conectando-as ao backend. Trabalhar com minha equipe proporcionou um ambiente colaborativo, mas com desafios que ajudaram no meu aprendizado. Hoje, essa experiência me incentiva a aprimorar habilidades como agilidade e proatividade em projetos futuros.',
+        'hard': 'Python, Flask, HTML, CSS, MySQL, Git',
+        'soft': 'Proatividade e Comunicação. Além disso, desenvolvi habilidades como trabalho em equipe e organização para cumprir os prazos e garantir uma entrega eficiente.',
+        'link_github': 'https://github.com/Daiene/Pixels',
+    },
+    {
+        'semestre-titulo': '2024-1',
         'titulo': '2º API | Internet Ocean',
         'imagem_src': 'static/images/api2s.png',
-        'descricao1': 'O projeto Internet Ocean tem o objetivo de realizar o gerenciamento de chamados de forma que aja maior otimização do processo de atendimento e suporte ao cliente, garantindo uma gestão eficiente das demandas.',
-        'descricao2': 'Sendo o projeto desenvolvido em grupo, eu tive grande participação no desenvolvimento Frontend, criando as telas e fazendo a conexão com o Backend. Já no desenvolvimento Backend, somente desenvolvi algumas funcionalidades. Utilizamos as tecnologias: JavaScript, TypeScript, React, Node.JS, HTML & CSS, MySQL e Git.',
+        'semestre': 'Participei no projeto da API chamado Internet Ocean juntamente com minha equipe da faculdade. Nesse projeto, o objetivo era realizar o gerenciamente de chaamdos de forma otimizada, para gestão de demandas no atendimento ao cliente. Durante esse semestre, exploramos como a utilização de frameworks Front-end modernos, como Bootstrap, aliados às boas práticas de orientação a objetos, poderiam otimizar a experiência do usuário e a eficiência operacional. A integração eficiente das tecnologias envolvidas provou ser essencial para atender às demandas do mercado atual.',
+        'tecnologias': 'Plataforma de Interaçãos, Analytics',
+        'contribuicoes': 'Dentro do projeto, minha maior contribuição foi na criação e estruturação do Frontend, desenvolvendo interfaces intuitivas e garantindo a integração funcional com o Backend. Dentro do grupo, tivemos uma relação amigável e as tarefas eram feitas de forma rápida. Não era uma equipe ágil, entretanto, serviu de aprendizado para meu crescimento hoje em dia, para melhorar em proatividade e agilidade nos projetos.',
+        'hard': 'Typescript, Javascript, Bootstrap, Node.js, React, Git.',
+        'soft': 'Proatividade e Autonomia. Ainda assim, aprimorei minhas habilidades de trabalho em equipe e gerenciamento de tempo para cumprir os prazos do projeto.',
         'link_github': 'https://github.com/CoddingWarriors/Api_CoddingWarriors',
     },
     {
-        'titulo': '1º API | Criança Renal',
-        'imagem_src': 'static/images/api.png',
-        'descricao1': 'O projeto Criança Renal consiste num site dedicado a mães que têm filhos com insuficiência renal crônica, visando fornecer informações e apoio relacionado à doença.',
-        'descricao2': 'Tal projeto foi desenvolvido em grupo, do qual eu tive uma participação considerável. Fiz parte do desenvolvimento front-end e utilizamos as tecnologias: Python, HTML & CSS, Flask, MySQL e Git.',
-        'link_github': 'https://github.com/Daiene/Pixels',
-    },
+        'semestre-titulo': '2024-2',
+        'titulo': '3º API | Portal Transparencia FAPG',
+        'imagem_src': 'static/images/api3s.png',
+        'semestre': 'Participei do projeto da API chamado Portal da Transparência FAPG, foi desenvolvido com minha equipe na faculdade. Esse projeto teve o objetivo de facilitar a gestão e a consulta de informações sobre projetos da fundação, promovendo transparência e acessibilidade. O sistema incluiu funcionalidades como cadastro e edição de projetos, filtros avançados por data, controle administrativo e módulos para o gerenciamento de administradores, bolsistas, convênios e materiais.',
+        'tecnologias': 'Plataforma de Interação, Analytics',
+        'contribuicoes': 'Contribuí de forma significativa no backend, implementando filtros, histórico do sistema e atendendo demandas críticas, além de corrigir aspectos do frontend. Fui mais proativo, ágil e eficiente em relação a projetos anteriores.',
+        'hard': 'Java, TypeScript, JavaScript, MySQL, Tailwind, Bootstrap, Spring Boot',
+        'soft': 'Proatividade e Agilidade. Esse projeto foi fundamental para consolidar minha capacidade de entrega e colaboração.',
+        'link_github': 'https://github.com/A-Sync-Fatec/api-fatec-3sem-24',
+    }
 ]
 
 projetos_pessoais = [
@@ -33,7 +52,7 @@ projetos_pessoais = [
         'descricao1': 'Este projeto foi feito com o intuito de compartilhar o curso de violão do meu pai. O site contém informações sobre o curso e o professor do mesmo, visualização do endereço pelo Google Maps e uma funcionalidade de enviar um e-mail automaticamente para o professor do curso através do próprio site.',
         'descricao2': 'Foram utilizadas as Tecnologias: HTML & CSS, Python, Flask e Git.',
         'link_github': 'https://github.com/ojuansoares/curso-violao',
-    },
+    }
 ]
 
 @app.route("/")

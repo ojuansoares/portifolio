@@ -12,14 +12,20 @@
 {% for projeto in projetos_academicos %}
     
     <div class="proj_content min_width">
-        <div>
+        <h1 class="texto1proj">{{ projeto['semestre-titulo'] }}</h1>
+        <div class="center-img">
             <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem">
         </div>
-        <div class="text_content">
-            <h1 class="texto1">{{ projeto['titulo'] }}</h1>
-            <h2 class="texto2">{{ projeto['descricao1'] }}</h2>
-            <h2 class="texto2">{{ projeto['descricao2'] }}</h2>
-            <a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">• Link do Repositório no GitHub.</h2></a>
+        <div>
+              <h1 class="texto1proj">{{ projeto['titulo'] }}</h1>
+            <ul>
+             <li class="texto2"><strong>Semestre:</strong> {{ projeto['semestre'] }}</li>
+             <li class="texto2"><strong>Tecnologias:</strong> {{ projeto['tecnologias'] }}</li>
+             <li class="texto2"><strong>Contribuições Pessoais:</strong> {{ projeto['contribuicoes'] }}</li>
+             <li class="texto2"><strong>Hard Skills:</strong> {{ projeto['hard'] }}</li>
+             <li class="texto2"><strong>Soft Skills:</strong> {{ projeto['soft'] }}</li>
+             <li><a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">Link do Repositório no GitHub.</h2></a></li>
+            </ul>
         </div>
     </div>
 {% endfor %}
@@ -31,7 +37,7 @@
 {% for projeto in projetos_pessoais %}
     
     <div class="proj_content min_width">
-        <div>
+        <div class="center-img">
             <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem">
         </div>
         <div class="text_content">
