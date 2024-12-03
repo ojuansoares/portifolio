@@ -29,11 +29,11 @@ projetos_academicos = [
         'semestre-titulo': '2024-2',
         'titulo': '3º API | Portal Transparencia FAPG',
         'imagem_src': 'static/images/api3s.png',
-        'semestre': 'Participei do projeto da API chamado Portal da Transparência FAPG, foi desenvolvido com minha equipe na faculdade. Esse projeto teve o objetivo de facilitar a gestão e a consulta de informações sobre projetos da fundação, promovendo transparência e acessibilidade. O sistema incluiu funcionalidades como cadastro e edição de projetos, filtros avançados por data, controle administrativo e módulos para o gerenciamento de administradores, bolsistas, convênios e materiais.',
+        'semestre': 'Participei do projeto da API Portal da Transparência FAPG, desenvolvido com minha equipe na faculdade. O objetivo foi facilitar a gestão e consulta de informações sobre projetos da fundação, promovendo transparência e acessibilidade. O sistema incluiu funcionalidades como cadastro e edição de projetos, filtros avançados por data, controle administrativo e módulos para gerenciamento de administradores, bolsistas, convênios e materiais. Durante o projeto, enfrentamos problemas com a formação dos grupos, exigindo mudanças drásticas nos membros, o que me forçou a melhorar minha interação em equipe e, consequentemente, minha entrega de resultados.',
         'tecnologias': 'Plataforma de Interação, Analytics',
         'contribuicoes': 'Contribuí de forma significativa no backend, implementando filtros, histórico do sistema e atendendo demandas críticas, além de corrigir aspectos do frontend. Fui mais proativo, ágil e eficiente em relação a projetos anteriores.',
         'hard': 'Java, TypeScript, JavaScript, MySQL, Tailwind, Bootstrap, Spring Boot',
-        'soft': 'Proatividade e Agilidade. Esse projeto foi fundamental para consolidar minha capacidade de entrega e colaboração.',
+        'soft': 'Proatividade, Agilidade, Colaboração e Entrega de Resultado. Esse projeto foi fundamental para consolidar minha capacidade de entrega, mentalidade profissional e colaboração em equipe.',
         'link_github': 'https://github.com/A-Sync-Fatec/api-fatec-3sem-24',
     }
 ]
