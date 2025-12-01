@@ -1,56 +1,62 @@
 {% extends "base.html" %}
 {% block content %}
-
 <div class="espaçoproj"></div>
 
 <body style="background-color: black; color: white;">
-
-
 <div class="min_width">
     <h1 class="titulo">Projetos Acadêmicos</h1>
 </div>
-{% for projeto in projetos_academicos %}
-    
-    <div class="proj_content min_width">
-        <h1 class="texto1proj">{{ projeto['semestre-titulo'] }}</h1>
-        <div class="center-img">
-            <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem">
+
+<!-- Grid layout para projetos compactos -->
+<div class="min_width">
+    <div class="projetos-grid">
+        {% for projeto in projetos_academicos %}
+        <div class="proj_content">
+            <h1 class="texto1proj">{{ projeto['semestre-titulo'] }}</h1>
+            <div class="center-img">
+                <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem do projeto">
+            </div>
+            <div>
+                <h2 class="texto1proj" style="font-size: 1.4rem; margin-top: 1rem;">{{ projeto['titulo'] }}</h2>
+                <ul>
+                    <li class="texto2"><strong style="color: #6366f1;">Semestre:</strong> {{ projeto['semestre'] }}</li>
+                    <li class="texto2"><strong style="color: #6366f1;">Tecnologias:</strong> {{ projeto['tecnologias'] }}</li>
+                    <li class="texto2"><strong style="color: #6366f1;">Contribuições:</strong> {{ projeto['contribuicoes'] }}</li>
+                    <li class="texto2"><strong style="color: #6366f1;">Hard Skills:</strong> {{ projeto['hard'] }}</li>
+                    <li class="texto2"><strong style="color: #6366f1;">Soft Skills:</strong> {{ projeto['soft'] }}</li>
+                    <li><a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">Link do Repositório no GitHub</h2></a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-              <h1 class="texto1proj">{{ projeto['titulo'] }}</h1>
-            <ul>
-             <li class="texto2"><strong>Semestre:</strong> {{ projeto['semestre'] }}</li>
-             <li class="texto2"><strong>Tecnologias:</strong> {{ projeto['tecnologias'] }}</li>
-             <li class="texto2"><strong>Contribuições Pessoais:</strong> {{ projeto['contribuicoes'] }}</li>
-             <li class="texto2"><strong>Hard Skills:</strong> {{ projeto['hard'] }}</li>
-             <li class="texto2"><strong>Soft Skills:</strong> {{ projeto['soft'] }}</li>
-             <li><a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">Link do Repositório no GitHub.</h2></a></li>
-            </ul>
-        </div>
+        {% endfor %}
     </div>
-{% endfor %}
+</div>
+<!-- </CHANGE> -->
 
 <div class="min_width">
     <h1 class="titulo">Projetos Pessoais</h1>
 </div>
 
-{% for projeto in projetos_pessoais %}
-    
-    <div class="proj_content min_width">
-        <div class="center-img">
-            <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem">
+<!-- Grid layout para projetos pessoais também -->
+<div class="min_width">
+    <div class="projetos-grid">
+        {% for projeto in projetos_pessoais %}
+        <div class="proj_content">
+            <div class="center-img">
+                <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem do projeto">
+            </div>
+            <div class="text_content">
+                <h1 class="texto1proj">{{ projeto['titulo'] }}</h1>
+                <h2 class="texto2">{{ projeto['descricao1'] }}</h2>
+                <h2 class="texto2">{{ projeto['descricao2'] }}</h2>
+                <br>
+                <a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">Link do Repositório no GitHub</h2></a>
+            </div>
         </div>
-        <div class="text_content">
-            <h1 class="texto1">{{ projeto['titulo'] }}</h1>
-            <br>
-            <h2 class="texto2">{{ projeto['descricao1'] }}</h2>
-            <h2 class="texto2">{{ projeto['descricao2'] }}</h2>
-            <br>
-            <a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">• Link do Repositório no GitHub.</h2></a>
-        </div>
+        {% endfor %}
     </div>
-{% endfor %}
+</div>
+<!-- </CHANGE> -->
 
 </body>
-
 {% endblock %}
