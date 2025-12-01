@@ -35,6 +35,17 @@ projetos_academicos = [
         'hard': 'Java, TypeScript, JavaScript, MySQL, Tailwind, Bootstrap, Spring Boot',
         'soft': 'Proatividade, Agilidade, Colaboração e Entrega de Resultado. Esse projeto foi fundamental para consolidar minha capacidade de entrega, mentalidade profissional e colaboração em equipe.',
         'link_github': 'https://github.com/A-Sync-Fatec/api-fatec-3sem-24',
+    },
+    {
+        'semestre-titulo': '2025-2',
+        'titulo': '5º API | Aplicativo militar de controle logístico setorial de ativos',
+        'imagem_src': 'static/images/militar_app.png',
+        'semestre': 'Participei do projeto da 5ª API, cujo objetivo foi desenvolver um aplicativo mobile para gestão do almoxarifado militar. O desafio central era substituir um processo burocrático, manual e sujeito a erros por uma solução moderna, rápida e segura. O sistema deveria permitir o cadastro de materiais, atualização de estoque, leitura via QR Code e uma interface simples e responsiva, acessível tanto em smartphones quanto em tablets. Esse projeto ampliou minha visão sobre boas práticas de desenvolvimento mobile e organização de processos logísticos.',
+        'tecnologias': 'Plataforma de Interação, Analytics',
+        'contribuicoes': 'Minhas principais contribuições foram no desenvolvimento de funcionalidades essenciais, como o envio automático de e-mails, o registro de pedidos com múltiplos itens do estoque e a integração das operações de cadastro e movimentação dos materiais. Também participei na construção de telas e lógica interna que garantem uma experiência fluida e organizada para o usuário final.',
+        'hard': 'Flutter, Supabase, Node.js, Python, Figma, Trello',
+        'soft': 'Proatividade, Comunicação, Colaboração, Organização.',
+        'link_github': 'https://github.com/TeamHiveAPI/API-2025.02',
     }
 ]
 
