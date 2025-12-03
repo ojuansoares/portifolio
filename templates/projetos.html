@@ -2,42 +2,40 @@
 {% block content %}
 <div class="espaçoproj"></div>
 
-<body style="background-color: black; color: white;">
 <div class="min_width">
     <h1 class="titulo">Projetos Acadêmicos</h1>
 </div>
 
-<!-- Grid layout para projetos compactos -->
 <div class="min_width">
-    <div class="projetos-grid">
+    <div class="projetos-preview-grid">
         {% for projeto in projetos_academicos %}
-        <div class="proj_content">
-            <h1 class="texto1proj">{{ projeto['semestre-titulo'] }}</h1>
-            <div class="center-img">
-                <img class="img_proj" src="{{ projeto['imagem_src'] }}" alt="Imagem do projeto">
+        <div class="projeto-card" 
+             data-titulo="{{ projeto['titulo'] }}"
+             data-imagem="{{ projeto['imagem_src'] }}"
+             data-semestre="{{ projeto['semestre'] }}"
+             data-tecnologias="{{ projeto['tecnologias'] }}"
+             data-contribuicoes="{{ projeto['contribuicoes'] }}"
+             data-hard="{{ projeto['hard'] }}"
+             data-soft="{{ projeto['soft'] }}"
+             data-link="{{ projeto['link_github'] }}"
+             onclick="openProjectModal(this)"
+             style="cursor: pointer;"> <div class="projeto-card-image">
+                <img src="{{ projeto['imagem_src'] }}" alt="Imagem do projeto">
             </div>
-            <div>
-                <h2 class="texto1proj" style="font-size: 1.4rem; margin-top: 1rem;">{{ projeto['titulo'] }}</h2>
-                <ul>
-                    <li class="texto2"><strong style="color: #6366f1;">Semestre:</strong> {{ projeto['semestre'] }}</li>
-                    <li class="texto2"><strong style="color: #6366f1;">Tecnologias:</strong> {{ projeto['tecnologias'] }}</li>
-                    <li class="texto2"><strong style="color: #6366f1;">Contribuições:</strong> {{ projeto['contribuicoes'] }}</li>
-                    <li class="texto2"><strong style="color: #6366f1;">Hard Skills:</strong> {{ projeto['hard'] }}</li>
-                    <li class="texto2"><strong style="color: #6366f1;">Soft Skills:</strong> {{ projeto['soft'] }}</li>
-                    <li><a href="{{ projeto['link_github'] }}" target="_blank"><h2 class="texto2">Link do Repositório no GitHub</h2></a></li>
-                </ul>
+            <div class="projeto-card-content">
+                <h3 class="projeto-card-semestre">{{ projeto['semestre-titulo'] }}</h3>
+                <h2 class="projeto-card-title">{{ projeto['titulo'] }}</h2>
+                <p class="projeto-card-cta">Clique para ver detalhes →</p>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
-<!-- </CHANGE> -->
 
 <div class="min_width">
     <h1 class="titulo">Projetos Pessoais</h1>
 </div>
 
-<!-- Grid layout para projetos pessoais também -->
 <div class="min_width">
     <div class="projetos-grid">
         {% for projeto in projetos_pessoais %}
@@ -56,7 +54,91 @@
         {% endfor %}
     </div>
 </div>
-<!-- </CHANGE> -->
 
-</body>
+<div id="projectModal" class="project-modal">
+    <div class="project-modal-content">
+        <span class="project-modal-close" onclick="closeProjectModal()">&times;</span>
+        <div class="project-modal-body">
+            <img id="modalImage" class="project-modal-image" src="" alt="Project image">
+            <h1 id="modalTitle" class="project-modal-title"></h1>
+            <div class="project-modal-details">
+                <div class="project-modal-section">
+                    <h3 class="text-cyan-400">Semestre</h3>
+                    <p id="modalSemestre" class="texto2"></p>
+                </div>
+                <div class="project-modal-section">
+                    <h3 class="text-cyan-400">Tecnologias</h3>
+                    <p id="modalTecnologias" class="texto2"></p>
+                </div>
+                <div class="project-modal-section">
+                    <h3 class="text-cyan-400">Contribuições Pessoais</h3>
+                    <p id="modalContribuicoes" class="texto2"></p>
+                </div>
+                <div class="project-modal-section">
+                    <h3 class="text-cyan-400">Hard Skills</h3>
+                    <p id="modalHard" class="texto2"></p>
+                </div>
+                <div class="project-modal-section">
+                    <h3 class="text-cyan-400">Soft Skills</h3>
+                    <p id="modalSoft" class="texto2"></p>
+                </div>
+                <a id="modalLink" href="" target="_blank" class="project-modal-link">
+                    Ver Repositório no GitHub →
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Esta função recebe o ELEMENTO HTML (div) clicado, não um objeto JSON
+function openProjectModal(element) {
+    // Pegamos os dados diretamente dos atributos data-* do HTML
+    const titulo = element.getAttribute('data-titulo');
+    const imagem = element.getAttribute('data-imagem');
+    const semestre = element.getAttribute('data-semestre');
+    const tecnologias = element.getAttribute('data-tecnologias');
+    const contribuicoes = element.getAttribute('data-contribuicoes');
+    const hard = element.getAttribute('data-hard');
+    const soft = element.getAttribute('data-soft');
+    const link = element.getAttribute('data-link');
+    
+    // Atualizamos o DOM do modal
+    document.getElementById('modalTitle').textContent = titulo;
+    document.getElementById('modalImage').src = imagem;
+    document.getElementById('modalSemestre').textContent = semestre;
+    document.getElementById('modalTecnologias').textContent = tecnologias;
+    document.getElementById('modalContribuicoes').textContent = contribuicoes;
+    document.getElementById('modalHard').textContent = hard;
+    document.getElementById('modalSoft').textContent = soft;
+    document.getElementById('modalLink').href = link;
+    
+    // Mostra o modal
+    const modal = document.getElementById('projectModal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Fechar clicando fora
+window.onclick = function(event) {
+    const modal = document.getElementById('projectModal');
+    if (event.target === modal) {
+        closeProjectModal();
+    }
+}
+
+// Fechar com ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeProjectModal();
+    }
+});
+</script>
+
 {% endblock %}
